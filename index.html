@@ -1,23 +1,79 @@
 <!doctype html>
 <html lang="en">
   <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="app.js">
+
 
     <title>NYT Search</title>
+
+    <style>
+    body {
+        align-content: center;
+        padding: 0px, 10px, 10px, 10px;
+        margin: 20%;
+        }
+        #searchButton {
+            background-color: chocolate;
+
+        }
+
+
+    </style>
   </head>
   <body>
-    <h1>NYT Search</h1>
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">NYT Search</h1>
+            <p class="lead">Add NYT Image Here</p>
+          </div>
+        </div> 
+    <input id="searchTerm">
+    <input id="numberResults" type="number">
+    <input id="startYear" type="date">
+    <input id="endYear" type="date">
+    
+    
+    <button id="searchButton">Search</button>
+   
+    <button id="clear">Clear</button>
+   
+   
+    <div id="displayResults"></div>
+    <form>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Search Term</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Another label</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+      </div>
+      <select class="custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four<i class="fa fa-foursquare" aria-hidden="true"></i></option>
+        <option value="5">Five</option>
+        <option value="6">Six</option>
+        <option value="7">Seven</option>
+        <option value="8">Eight</option>
+        <option value="9">Nine</option>
+        <option value="10">Ten</option>
+      </select>
+    </form>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
