@@ -20,7 +20,8 @@ $("#searchButton").on("click", function() {
     var searchValue = $("#searchTerm").val();
     var apiLookupValue = searchValue; //this is what we'll need to change each call (right now set to look up "Kevin Durant")
     var queryURL = apiWebsite + apiLookupValue + '&api-key='+ apiKey;
-
+    // &begin_date=
+    // &end_date=
     console.log(startYear.val());
     console.log(endYear.val());
     var numResults = 1;
